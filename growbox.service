@@ -1,0 +1,14 @@
+[Unit]
+Description=growbox
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/growbox/growbox.py
+User=root
+Restart=on-failure
+StandardInput=tty-force
+TTYPath=/dev/tty2
+
+[Install]
+WantedBy=multi-user.target
