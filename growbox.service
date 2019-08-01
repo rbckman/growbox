@@ -4,7 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python /home/pi/growbox/growbox.py
+ExecStart=/usr/bin/python3 /home/pi/growbox/growbox.py
 User=root
 Restart=on-failure
 StandardInput=tty-force
